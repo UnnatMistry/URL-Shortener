@@ -1,0 +1,319 @@
+$greyFontColor: #A1A0A8;
+$greyBackColor: #F0F1F6;
+$buttonColor: #33CED3;
+$blackColor:#000000;
+$margin: 60px;
+$font: 'Poppins', sans-serif;
+
+body, html{
+    height: 100%;
+}
+
+body{
+    font-family: $font;
+    margin: 0;
+    #bg{
+        // clip-path: polygon(0 20%, 100% 20%, 100% 100%, 0% 100%);
+        background-color: $greyBackColor;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        line-height: 20px;
+        background-color: #F0F1F6;
+        margin-top: 100px;
+
+        h2{
+            text-align: center;
+            margin-top: 200px;
+            
+        }
+        p{
+            text-align: center;
+            margin-top: 10px;
+            color:$greyFontColor;
+        }
+    }
+}
+
+header{
+    margin-left: $margin;
+    color: $greyFontColor;
+    ul{
+        h2{
+            color: $blackColor; 
+        }
+        list-style: none;
+        display: flex;
+        flex-flow: row;
+        align-items: baseline;
+        li{
+            margin-right: 25px;
+        }
+        .login{
+            display: flex;
+            align-items: baseline;
+            margin-left:700px;
+        }
+    }
+}
+
+button{
+    display: flex;
+    align-items: center;
+    background-color: $buttonColor;
+    border: none;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px 10px 15px;
+    border-radius: 35px; 
+}
+
+section{
+    margin-left: 100px;
+    margin-top: 90px;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    .item1{
+        font-size: 59px;
+        line-height: 60px;
+        font-weight: bolder;
+        p{
+            flex-flow: column;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 30px;
+            color:$greyFontColor;
+            button{
+                margin-top: 30px;
+            }
+        }
+    }
+    img{
+      width: 600px;
+      height: 400px;
+      margin-right: -100px;
+      max-width: 740px;
+      margin-left: 40px;
+    }
+
+}
+
+
+.input-box {
+    position: relative;
+    text-align: center;
+    width: 1100px;
+    height: 100px;
+    bottom: -50px;
+    left: 100px;
+    border-radius: 10px;
+    background: url("../assets/images/bg-shorten-desktop.svg");
+    background-color: #3b3054;
+    input{
+        width: 800px;
+        height: 50%;
+        border-radius: 10px;
+        margin-top:25px;
+        margin-right: 200px ;
+    }
+    button{
+        position: absolute;
+        left: 870px;
+        bottom: 25px;
+        border-radius: 8px;
+        padding: 13px 30px 13px 30px;
+    }
+
+  }
+
+//-------------Boxes---------------------------
+
+.boxes-container{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    flex-flow: row;
+    height: 50px;
+    margin-left: 70px;
+    margin-right: 200px;
+    margin-top: 150px;
+}
+.box1{
+    width: 300px;
+    height: 200px;
+    background-color: #ffffff;   
+    align-self: flex-end;
+    section{
+        margin:20px;
+        font-size: 10px;
+        flex-flow: column;
+    }
+    p{
+        color:$greyFontColor;
+        text-align: left;
+    }
+}
+
+.box2{
+    width: 300px;
+    height: 200px;
+    background-color: #ffffff;   
+    align-self: center;
+    section{
+        margin:20px;
+        font-size: 10px;
+        flex-flow: column;
+    }
+}
+
+.box3{
+    width: 300px;
+    height: 200px;
+    background-color: #ffffff;   
+    section{
+        margin:20px;
+        font-size: 10px;
+        flex-flow: column;
+    }
+}
+
+.box2::after,
+.box2::before {
+  content: "";
+  width: 65px;
+  height: 8px;
+  background-color: $buttonColor;
+  position: absolute;
+}
+.box2::after {
+    top: 450px;
+    left: 440px;
+  }
+
+  .box2::before {
+    bottom: 350px;
+    right: 570px;
+  }
+
+
+
+
+
+
+
+// $greyColor: #A1A0A8;
+// $buttonColor: #33CED3;
+// $font: 'Poppins', sans-serif;
+
+// header{
+//     font-family: $font;
+//     color: $greyColor;
+//     h2{
+//         color: #000000;
+//     }
+//     button {
+//         background-color: $buttonColor;
+//         border: none;
+//         color: white;
+//         padding: 10px 15px 10px 15px;
+//         text-align: center;
+//         text-decoration: none;
+//         display: inline-block;
+//         font-size: 16px;
+//         margin: 4px 25px;
+//         border-radius: 35px;
+//         }
+// }
+
+// @mixin flexCenter($direction) {
+    
+// }
+
+// @mixin Grid {
+    
+// }
+
+// .menu{
+//     // @import flexCenter(column);
+//     // @extend header se quiser copiar tudo de outra classe
+//     // tudo é linear, o que botou por ultimo aparecerá
+//     display: flex;
+//     align-items: baseline;
+// }
+
+
+
+// .titulos{
+//     display: grid;
+//     margin-top: 90px;
+//     margin-left: 160px;
+//     //overflow: hidden;
+//     grid-template-columns: repeat(6,1fr) ;
+//     grid-template-rows: repeat(6, 150px);
+//   }
+// .item1{
+//     grid-column: 1/4;
+//     grid-row: 1;
+//     font-size: 59px;
+//     line-height: 60px;
+//     font-weight: bolder;
+// }
+// .item2{
+//     grid-column: 6;
+//     grid-row: 1/2;
+// }
+
+// .item3{
+//     grid-row: 2;
+//     grid-column: 1/5;
+//     color: $greyColor;
+//     font-family: $font;
+//     font-size: 18px;
+// }
+// .item4{
+//     grid-row: 2;
+//     grid-column: 1;
+
+// }
+// body button {
+//         background-color: $buttonColor;
+//         padding: 10px 25px 10px 25px;
+//         margin-top: 100px;
+//         border: none;
+//         color: white;
+//         text-align: center;
+//         text-decoration: none;
+//         display: inline-block;
+//         font-size: 16px;
+//         border-radius: 35px;
+// }
+
+// .down{
+//     display: grid;
+//     background-color: #F0F1F6;
+//     grid-row: 5/7;
+//     grid-column: 1/7;
+//     margin-left: -200px;
+// }
+
+// .input{
+//     margin: 3rem 7rem;
+//     height: 10rem;
+//     width: 100rem;
+//     background-color: #3b3054;
+//     border-radius: 10px;
+//     background-size: cover;
+//     justify-content: space-between;
+//     align-items: center;
+//     align-content: center;
+//     position: absolute;
+//     top: 67rem;
+//     right: 22rem;
+// }
+
+// .url{
+//     top: 20rem;
+// }
+
